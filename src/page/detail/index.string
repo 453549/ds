@@ -1,0 +1,48 @@
+{{#data}}
+<div class="intro-wrap">
+  <div class="img-wrap">
+    <div class="main-img-con">
+      <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}" />
+    </div>
+    <ul class="sub-img-con">
+      {{#subImages}}
+      <li class="sub-img-item">
+        <img class="sub-img" src="{{imageHost}}{{.}}" alt="{{name}}">
+      </li>
+      {{/subImages}}
+    </ul>
+  </div>
+  <div class="info-wrap">
+    <h1 class="title">{{name}}</h1>
+    <p class="sub-title">{{subtitle}}</p>
+    <div class="info-item price-con">
+      <span class="label">价格:</span>
+      <span class="price">¥ {{price}}</span>
+    </div>
+    <div class="info-item">
+      <span class="label">库存:</span>
+      <span class="stock">{{stock}}</span>
+    </div>
+    <div class="info-item count-con">
+      <span class="label">数量:</span>
+      <input id="count" class="count" value="1" readonly>
+      <span id="plus" class="plus count-btn">+</span>
+      <span id="minus" class="minus count-btn disabled">-</span>
+    </div>
+    <div class="info-item">
+      <a id="addCart" class="btn">加入购物车</a>
+    </div>
+  </div>
+</div>
+<div class="detail-wrap">
+  <ul class="tab-list">
+    <li class="tab-item active">商品详情</li>
+  </ul>
+  <span class="detail-con">
+    {{{detail}}}
+  </span>
+</div>
+{{/data}}
+{{^data}}
+  <p class="err-tip">很抱歉，实在找不到您要的商品。</p>
+{{/data}}

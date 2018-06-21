@@ -1,0 +1,33 @@
+<div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="./list.html?categoryId=100021" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner1.jpg" />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="./list.html?categoryId=100030" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner2.jpg" />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="./list.html?categoryId=100016" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner3.jpg" />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="./list.html?categoryId=100001" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner4.jpg" />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="./list.html?categoryId=100021" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner5.jpg" />
+      </a>
+    </div>
+</div>
+<!-- 如果需要分页器 -->
+<div class="swiper-pagination"></div>
+
+<!-- 如果需要导航按钮 -->
+<div class="swiper-button-prev swiper-button-white"></div>
+<div class="swiper-button-next swiper-button-white"></div>

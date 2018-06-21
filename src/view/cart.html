@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%= htmlWebpackPlugin.options.title %>  -Mall</title>
+	</head>
+  <body>
+		<%= require('html-loader!./layout/nav.html') %>
+		<%= require('html-loader!./layout/header.html') %>
+    <div class="crumb">
+      <div class="w">
+        <div class="crumb-con">
+          <a class="link" href="./index.html">Mall</a>
+          <span>></span>
+          <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
+        </div>
+      </div>
+    </div>
+		<div class="page-wrap w">
+			<!-- <table class="cart-wrap">
+			  <thead class="cart-header">
+			    <tr>
+			      <th class="checkAll-con">
+			      	<input type="checkbox" checked>
+							<label>全选</label>
+			      </th>
+						<th>商品信息</th>
+						<th>单价</th>
+						<th class="title-count">数量</th>
+						<th>合计</th>
+						<th>操作</th>
+			    </tr>
+			  </thead>
+			  <tbody class="cart-body">
+			    <tr class="cell">
+			      <td class="cell-check-wrap">
+							<div class="cell-check-con">
+								<input class="cell-check" type="checkbox" checked>
+							</div>
+							<a class="cell-img-con">
+								<img src="http://img.happymmall.com/c504df72-47f7-4e08-9d1d-2e46932880c2.jpg" alt="">
+							</a>
+			      </td>
+			      <td class="cell-name-con">
+							<a class="link" href="#">商品信息商品信息商品信息</a>
+						</td>
+						<td class="cell-price">9999999</td>
+						<td class="cell-count-con">
+							<span class="minus disabled">-</span>
+							<input class="count" type="text" value="1" disabled>
+							<span class="plus">+</span>
+						</td>
+						<td class="cell-totalPrice" class="">¥1000000</td>
+						<td>
+							<a class="link" href="#">删除</a>
+						</td>
+			    </tr>
+			  </tbody>
+				<tfoot class="cart-footer">
+			    <tr>
+			      <td class="cart-footer-item" colspan="3">
+							<span class="checkAll-con">
+								<input type="checkbox" checked>
+								<label>全选</label>
+							</span>
+							<span class="delete-con link">
+								<i class="fa fa-trash-o"></i>
+								删除选中
+							</span>
+			      </td>
+			      <td class="cart-footer-item" colspan="3">
+							<span class="price-textTitle">总价:</span>
+							<span class="cartTotalPrice">¥123</span>
+							<span id="submit" class="btn">去结算</span>
+			      </td>
+			    </tr>
+			  </tfoot>
+			</table>
+			<p class="err-tip">错错错</p> -->
+    </div>
+		<%= require('html-loader!./layout/footer.html') %>
+  </body>
+</html>

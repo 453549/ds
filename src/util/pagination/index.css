@@ -1,0 +1,63 @@
+.pagination{
+  margin-top: 20px;
+  text-align: center;
+}
+/*按钮基础样式*/
+.pagination .items{
+  display: inline-block;
+}
+.pagination .item{
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  border: solid 1px #ededed;
+  background: #fff;
+  cursor: pointer;
+}
+.pagination .item:hover{
+  color: #e80012;
+  border:1px solid #e80012;
+}
+.pagination .active{
+  background: #e80012;
+  color: #fff;
+}
+.pagination .active:hover{
+  color: #fff;
+}
+
+/*上一页, 下一页样式*/
+.pagination .prev,.pagination .next{
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  color: #000;
+  border: solid 1px #ededed;
+  background: #fff;
+}
+.pagination .prev>a,.pagination .next>a{
+  display: block;
+  color: #000;
+}
+.pagination .disabled a,.pagination .disabled a:hover{
+  color: #ededed;
+}
+.pagination .disabled:hover{
+  border: 1px solid #ededed;
+}
+
+/*省略号按钮样式*/
+.pagination .items .dot{
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+}
+
+/*总数*/
+.pagination .total{
+  display: inline-block;
+  margin-left: 10px;
+}

@@ -1,0 +1,109 @@
+.cart-wrap{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing:0px 10px;/*去掉表格间的缝隙*/
+}
+/* ========== 表头 ========= */
+.cart-header tr{
+  height: 35px;
+  background: #eee;
+}
+.cart-header th{
+  text-align: left;
+}
+.cart-header .checkAll-con{
+  padding-left: 10px;
+}
+.cart-header .title-count{
+  text-align: center;
+}
+
+/* ========== 主体部分 ========= */
+.cart-body .cell{
+  height: 100px;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+/*选择框与图片*/
+.cart-body .cell-check-wrap{
+  padding-left: 10px;
+  width: 150px;
+}
+.cart-body .cell-check-wrap .cell-check-con{
+  float: left;
+  height: 80px;
+  line-height: 80px;
+}
+.cart-body .cell-check-wrap .cell-img-con{
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+.cart-body .cell-check-wrap .cell-img-con img{
+  width: 100%;
+  height: 100%;
+}
+/*加减数量区域*/
+.cart-body  .cell-count-con{
+  text-align: center;
+}
+.cart-body .cell-count-con .minus,.cart-body  .cell-count-con .plus{
+  display: inline-block;
+  width: 20px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+.cart-body  .cell-count-con .count{
+  height: 25px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-align: center;
+}
+.cart-body .cell-count-con .disabled{
+  color: #ddd;
+  cursor: auto;
+}
+/*总价*/
+.cart-body .cell-totalPrice{
+  font-weight: bold;
+}
+
+/* ========== 表尾 ========= */
+.cart-footer tr{
+  height: 40px;
+  background: #eee;
+  border-top: 1px solid #eee;
+}
+.cart-footer .cart-footer-item:last-child{
+  text-align: right;
+}
+.cart-footer .checkAll-con{
+  padding-left: 10px;
+}
+.cart-footer .delete-con{
+  margin-left: 20px;
+}
+.cart-footer .cart-footer-item .price-textTitle{
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+.cart-footer .cartTotalPrice{
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: #c60023;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+.btn{
+  vertical-align: top;
+}

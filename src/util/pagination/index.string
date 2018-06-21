@@ -1,0 +1,52 @@
+<ul class="items">
+  {{#hasPreviousPage}}
+    <li class="prev">
+      <a class="link">
+        <i class="fa fa-angle-left"></i>
+        <span>上一页</span>
+      </a>
+    </li>
+  {{/hasPreviousPage}}
+  {{^hasPreviousPage}}
+    <li class="prev disabled">
+      <a class="link">
+        <i class="fa fa-angle-left"></i>
+        <span>上一页</span>
+      </a>
+    </li>
+  {{/hasPreviousPage}}
+  {{#arr}}
+    {{#active}}
+      <li class="item active" data-pageNum="{{num}}">
+    {{/active}}
+    {{^active}}
+        <li class="item" data-pageNum="{{num}}">
+    {{/active}}
+      <span class="num">{{num}}</span>
+    </li>
+  {{/arr}}
+  {{#_dot}}
+    <li class="dot">
+      <span>...</span>
+    </li>
+  {{/_dot}}
+  {{#hasNextPage}}
+    <li class="next">
+      <a class="link">
+        <span>下一页</span>
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </li>
+  {{/hasNextPage}}
+  {{^hasNextPage}}
+    <li class="next disabled">
+      <a class="link">
+        <span>下一页</span>
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </li>
+  {{/hasNextPage}}
+</ul>
+<div class="total">
+  共 {{pages}} 页
+</div>

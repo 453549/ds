@@ -1,5 +1,116 @@
-body{
-	background: red;
-	background: url(../../image/1215364zkhhrffc7i5zrzo.jpg);
-	background: url(../../image/index/1.jpg);
+/* ========== 左侧菜单栏 ========== */
+.keywords-list{
+  float: left;
+  width: 240px;
+  padding: 10px 0;
+  color: #fff;
+  background: #666;
+  margin-right: 10px;
+  height: 350px;
+}
+.keywords-list .keywords-item{
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  padding-left: 12px;
+}
+.keywords-list .keywords-item:hover{
+  background: #999;
+}
+.keywords-list .keywords-item .link{
+  margin-right: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+.keywords-list .keywords-item .link:hover{
+  color: #c60023;
+}
+
+/* ========== 右侧轮播图区域 ========== */
+.banner-con {
+  float: left;
+  width: 830px;
+  height: 370px;
+  background: #eee;
+}
+.banner-con .loading{
+   margin-top: 150px;
+}
+/*调整轮播图默认样式*/
+.swiper-container .banner-img{
+  width: 100%;
+  height: 370px;
+}
+.swiper-container .swiper-pagination-bullet-active{
+  background: #fff;
+}
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next{
+  background-color: #000;
+  opacity: 0.4;
+  background-size: 20px 20px;
+  padding: 10px;
+}
+.swiper-container .swiper-button-prev{
+  left: 0;
+}
+.swiper-container .swiper-button-next{
+  right: 0;
+}
+
+/* ========== 商品区域 ========== */
+/*标题*/
+.floor-wrap .floor-title{
+  height: 50px;
+  line-height: 50px;
+  color: #d58717;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid #d58717;
+}
+.floor-wrap:nth-child(2) .floor-title{
+  color: #3b838c;
+  border-bottom: 1px solid#3b838c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+  color: #a93931;
+  border-bottom: 1px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+  color: #488bad;
+  border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+  color: #642663;
+  border-bottom: 1px solid #642663;
+}
+/*商品块*/
+.floor-list{
+  overflow: hidden;
+  margin-right: -20px;
+}
+.floor-list .floor-item{
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 220px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.floor-list .floor-item:hover{
+  box-shadow: 1px 1px 7px #ddd;
+}
+.floor-list .floor-item .floor-text{
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 16px;
+  color: #5e5e5e;
+}
+.floor-list .floor-item .floor-img{
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  width: 80%;
+  height: 75%;
 }

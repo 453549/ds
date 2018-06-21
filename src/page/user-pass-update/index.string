@@ -1,0 +1,17 @@
+{{#data}}
+<div class="user-info">
+  <div class="form-line">
+    <span class="label">原始密码:</span>
+    <input class="input" id="passwordOld" type="password">
+  </div>
+  <div class="form-line">
+    <span class="label">新密码:</span>
+    <input class="input" id="passwordNew" type="password">
+  </div>
+  <div class="form-line">
+    <span class="label">确认密码:</span>
+    <input class="input" id="passwordConfirm" type="password">
+  </div>
+  <a class="btn btn-mini" id="submit">提交修改</a>
+</div>
+{{/data}}

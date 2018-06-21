@@ -1,0 +1,25 @@
+{{#data}}
+<div class="user-info">
+  <div class="form-line">
+    <span class="label">用户名:</span>
+    <span class="text">{{username}}</span>
+  </div>
+  <div class="form-line">
+    <span class="label">电 话:</span>
+    <input class="input" id="phone" type="text" value="{{phone}}">
+  </div>
+  <div class="form-line">
+    <span class="label">邮 箱:</span>
+    <input class="input" id="email" type="emal1" value="{{email}}">
+  </div>
+  <div class="form-line">
+    <span class="label">问 题:</span>
+    <input class="input" id="question"  type="text" value="{{question}}">
+  </div>
+  <div class="form-line">
+    <span class="label">答 案:</span>
+    <input class="input" id="answer" type="text" value="{{answer}}">
+  </div>
+  <a class="btn btn-mini" id="submit">提交修改</a>
+</div>
+{{/data}}
